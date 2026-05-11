@@ -1,0 +1,54 @@
+body {
+    background-color: white;
+    font-size: 20px;
+}
+
+#content {
+    max-width: 800px;
+    margin: 40px auto;
+    border: 1px solid darkgray;
+    padding: 50px;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 2em;
+}
+
+h2 {
+    text-align: center;
+    color: #035f9c;
+    letter-spacing: 3px;
+    font-size: 1em;
+}
+
+hr {
+    height: 1px;
+    background-color: lightgray;
+    width: 80%;
+}
+
+#statement {
+    width: 70%;
+    margin: 0 auto;
+    line-height: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+#small-title {
+    font-style: italic;
+}
+
+li {
+    margin-bottom: 20px;
+}
+
+img {
+    display: block;
+    margin: 40px auto;
+    width: 20%;
+}
