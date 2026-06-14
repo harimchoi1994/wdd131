@@ -1,5 +1,5 @@
 const character = {
-    name: "Cat Mayo Magician ",
+    name: "Cat Mayo Magician",
     class: "Mayo Magician",
     level: 1,
     health: 100,
@@ -8,50 +8,43 @@ const character = {
 
     attacked: function () {
         this.health -= 20;
-      
-        if(this.health <= 0) {
-            this.health = 0;
-            document.querySelector('#message').textContent =`${this.name} has died`;
-        } else{
-            document.querySelector('#message').textContent =`${this.name} was attacked`;
 
+        if (this.health <= 0) {
+            this.health = 0;
+            document.querySelector("#message").textContent = `${this.name} has died.`;
+        } else {
+            document.querySelector("#message").textContent = `${this.name} was attacked.`;
         }
 
+        renderCharacter();
     },
-    
+
     levelUp: function () {
         this.level += 1;
         this.mana += 100;
 
-        document.querySelector("#message").textContent = `${this.name} leveled up!`:
+        document.querySelector("#message").textContent = `${this.name} leveled up!`;
         renderCharacter();
     }
 };
 
-function renderCharacter(){
+function renderCharacter() {
     document.querySelector("#characterName").textContent = character.name;
     document.querySelector("#characterClass").textContent = character.class;
     document.querySelector("#characterLevel").textContent = character.level;
-    document.querySelector("#characterHealth").textContent = character.Health;
-    document.querySelector("#characterMana").textContent = character.Mana;
+    document.querySelector("#characterHealth").textContent = character.health;
+    document.querySelector("#characterMana").textContent = character.mana;
 
-
-   
-
-    document.querySelector("#characterImager").setAttribute("src",character.image);
-    document.querySelector("#characterImager").setAttribute("alt",character.name);
-    
+    document.querySelector("#characterImage").setAttribute("src", character.image);
+    document.querySelector("#characterImage").setAttribute("alt", character.name);
 }
 
 renderCharacter();
 
-document.querySelector("#attackButton").addEventListener("click",function(){
+document.querySelector("#attackButton").addEventListener("click", function () {
     character.attacked();
-
 });
 
-document.querySelector("#levelButton").addEventListener("click",function(){
-
-    character.levelup();
+document.querySelector("#levelButton").addEventListener("click", function () {
+    character.levelUp();
 });
-
