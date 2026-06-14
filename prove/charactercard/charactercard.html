@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Card</title>
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cat Magician Character Card">
+    <meta property="og:description" content="A fantasy character card made with a JavaScript object.">
+    <meta property="og:url" content="https://harimchoi1994.github.io/wdd131/charactercard/charactercard.html">
+    <meta property="og:image" content="https://harimchoi1994.github.io/wdd131/ponder/images/cat-social-preview.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Cat Magician Character Card">
+    <meta name="twitter:description" content="A fantasy character card made with a JavaScript object.">
+    <meta name="twitter:image" content="https://harimchoi1994.github.io/wdd131/ponder/images/cat-social-preview.png">
+
+    <!-- One favicon -->
+    <link rel="icon" href="../ponder/images/favicon.ico">
+
+    <!-- One Apple Touch Icon -->
+    <link rel="apple-touch-icon" href="../ponder/images/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="charactercard.css">
+    <script src="charactercard.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section class="card">
+            <img id="characterImage" class="image" src="../ponder/images/cat-character.png" alt="Cat Magician">
+
+            <h1 id="characterName" class="name"></h1>
+
+            <div class="stats">
+                <p><strong>Class:</strong> <span id="characterClass"></span></p>
+                <p><strong>Level:</strong> <span id="characterLevel"></span></p>
+                <p><strong>Health:</strong> <span id="characterHealth"></span></p>
+                <p><strong>Mana:</strong> <span id="characterMana"></span></p>
+                <p id="message"></p>
+            </div>
+
+            <div class="buttons">
+                <button id="attackButton" type="button">Attack</button>
+                <button id="levelButton" type="button">Level Up</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
