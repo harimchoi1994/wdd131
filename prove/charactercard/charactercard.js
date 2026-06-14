@@ -4,7 +4,7 @@ const character = {
     level: 1,
     health: 100,
     mana: 500,
-    image: "images/cat-character.png",
+    image: "image/cat-character.png",
 
     attacked: function () {
         this.health -= 20;
