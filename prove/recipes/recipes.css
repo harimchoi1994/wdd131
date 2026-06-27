@@ -150,3 +150,15 @@ footer {
         justify-content: space-between;
     }
 }
+
+.recipes {
+    display:flex;
+    flex-direction:column;
+    gap:1em;
+}
+
+.tags{
+    display:flex;
+    gap: 0.3em;
+    flex-wrap:wrap;
+}
