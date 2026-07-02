@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harim Choi Portfolio Site Plan</title>
+  <link type="text/css" rel="stylesheet" href="styles/site-plan.css">
+</head>
+
+<body>
+  <header>
+    <h1>Harim Choi Portfolio Site Plan</h1>
+    <h2>Personal Project Portfolio Web Application</h2>
+    <h2>Harim Choi</h2>
+  </header>
+
+  <main>
+    <hr>
+
+    <h2>Overview</h2>
+
+    <h3>Purpose</h3>
+    <p>
+      The purpose of this website is to present my personal portfolio, resume information,
+      and selected programming projects in one organized place. This site will help visitors
+      quickly understand my technical skills, project experience, and the type of work I am
+      interested in building.
+    </p>
+
+    <h3>Audience</h3>
+    <p>
+      The intended audience for this site includes potential employers, internship recruiters,
+      professors, classmates, and project teammates. The site is designed for people who want
+      to see my programming skills, project history, and examples of my work without needing
+      to search through multiple links.
+    </p>
+
+    <h3>Dynamic Elements</h3>
+    <p>
+      JavaScript will be used to organize projects by category and tags. The project data will
+      be stored in an array of objects, and JavaScript will create project cards dynamically.
+      Users will be able to filter projects by categories such as Web, Software, Data / ML,
+      Backend, Cloud / Linux, and Engineering. Users will also be able to search projects by
+      keyword or skill, sort the project list, and open a detail section for each project.
+    </p>
+
+    <h3>Pseudocode</h3>
+    <ol>
+      <li>Create an array of project objects.</li>
+      <li>Each project object will include a title, category, date, description, skills, image, and link.</li>
+      <li>When the page loads, select the project container from the HTML.</li>
+      <li>Loop through the project array.</li>
+      <li>Create a project card for each project using JavaScript.</li>
+      <li>Display the project title, image, category, description, skills, and a details button.</li>
+      <li>Create category filter buttons such as All, Web, Software, Data / ML, Backend, Cloud / Linux, and Engineering.</li>
+      <li>When a filter button is clicked, check which category the user selected.</li>
+      <li>If the selected category is All, display every project.</li>
+      <li>Otherwise, use the filter method to display only projects that match the selected category.</li>
+      <li>Create a search input box.</li>
+      <li>When the user types in the search box, compare the search text with the project title, description, and skills.</li>
+      <li>Display only the projects that match the search text.</li>
+      <li>Create a sort dropdown.</li>
+      <li>When the user selects a sort option, sort the project array by newest date or project name.</li>
+      <li>Re-render the project cards after filtering, searching, or sorting.</li>
+      <li>Add a View Details button to each card.</li>
+      <li>When the View Details button is clicked, display more information about the selected project.</li>
+    </ol>
+
+    <hr>
+
+    <h2>Branding</h2>
+
+    <h3>Website Logo</h3>
+    <img src="images/logo.svg" alt="Harim Choi Portfolio Logo">
+
+    <hr>
+
+    <h2>Style Guide</h2>
+
+    <h3>Color Palette</h3>
+    <p>
+      The color palette uses dark navy, bright blue, gray, and a light background color.
+      These colors create a clean, professional, and modern portfolio style.
+    </p>
+
+    <table class="colors">
+      <tr>
+        <th>Primary</th>
+        <th>Secondary</th>
+        <th>Accent 1</th>
+        <th>Accent 2</th>
+      </tr>
+      <tr>
+        <td class="primary">#1e293b</td>
+        <td class="secondary">#38bdf8</td>
+        <td class="accent1">#64748b</td>
+        <td class="accent2">#f8fafc</td>
+      </tr>
+    </table>
+
+    <h3>Typography</h3>
+
+    <h4>Heading Font: Poppins</h4>
+    <h4>Paragraph Font: Lato</h4>
+
+    <h3>Normal Paragraph Example</h3>
+    <p>
+      This portfolio website will use clear and readable text so visitors can quickly understand
+      my background, skills, and project experience.
+    </p>
+
+    <h3>Colored Paragraph Example</h3>
+    <p class="colored">
+      This section shows how text will appear on a colored background using the selected color palette.
+    </p>
+
+    <hr>
+
+    <h2>Navigation</h2>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <hr>
+
+    <h2>Site Map</h2>
+    <div class="sitemap">
+      <div class="sm-home">Home</div>
+      <div class="sm-page2">Projects</div>
+      <div class="sm-page3">Contact</div>
+
+      <div class="top">&nbsp;</div>
+      <div class="left">&nbsp;</div>
+      <div class="right">&nbsp;</div>
+    </div>
+
+    <hr>
+
+    <h2>Content</h2>
+
+    <h3>Home Page Content</h3>
+    <p>
+      Hi, I’m Harim Choi. I am a computer science student building projects in web development,
+      software development, databases, APIs, cloud computing, and machine learning. This portfolio
+      shows selected projects I have worked on, the technologies I used, and what I learned from
+      each project.
+    </p>
+    <p>
+      The home page will include a short introduction, a skills summary, and featured project cards.
+      It will also include a button that leads visitors to the full projects page.
+    </p>
+
+    <h3>Projects Page Content</h3>
+    <p>
+      The projects page will show a list of my programming projects. Each project card will include
+      the project title, category, short description, technologies used, and a button to view more
+      details.
+    </p>
+    <p>
+      The project categories will include Web, Software, Data / ML, Backend, Cloud / Linux, and
+      Engineering. These categories will help visitors understand my skills across different technical
+      areas.
+    </p>
+
+    <h3>Project Category Content</h3>
+    <ul>
+      <li><strong>Web:</strong> HTML, CSS, JavaScript, responsive design, and frontend layouts.</li>
+      <li><strong>Software:</strong> C++, C#, Java, data structures, algorithms, and console applications.</li>
+      <li><strong>Data / ML:</strong> Python, data analysis, machine learning models, metrics, and charts.</li>
+      <li><strong>Backend:</strong> SQL, PostgreSQL, Node.js, Express, APIs, and server-side data.</li>
+      <li><strong>Cloud / Linux:</strong> Firebase, Firestore, GitHub Pages, VPS, PM2, and Linux deployment.</li>
+      <li><strong>Engineering:</strong> robotics concepts, product ideas, embedded systems, and mechanical design interests.</li>
+    </ul>
+
+    <h3>Example Project Content</h3>
+    <ul>
+      <li>
+        <strong>BYU-I Professor Finder:</strong>
+        A campus project that helps users find professor information, office locations,
+        buildings, and office hours.
+      </li>
+      <li>
+        <strong>Cloud Reaction Game Leaderboard:</strong>
+        A cloud database project using Firebase Firestore to store and display game scores.
+      </li>
+      <li>
+        <strong>Bike Rental Machine Learning Project:</strong>
+        A machine learning project that predicts bike rental demand using weather and time data.
+      </li>
+      <li>
+        <strong>Housing Price Prediction Project:</strong>
+        A machine learning project that uses housing data to predict prices and compare model performance.
+      </li>
+    </ul>
+
+    <h3>Contact Section Content</h3>
+    <p>
+      The contact section will include simple ways for visitors to connect with me, such as GitHub,
+      LinkedIn, and email. This section will be simple and professional.
+    </p>
+
+    <hr>
+
+    <h2>Wireframes</h2>
+
+    <h3>Home Page Wireframe</h3>
+    <pre>
+------------------------------------------------
+| HC Portfolio        Home | Projects | Contact |
+------------------------------------------------
+| Hi, I'm Harim Choi                         |
+| Computer Science Student / Developer       |
+| [View My Projects] [Resume]                |
+------------------------------------------------
+| Main Skill Areas                            |
+| [Web] [Software] [Data / ML]               |
+| [Backend] [Cloud / Linux] [Engineering]    |
+------------------------------------------------
+| Featured Projects                           |
+| [Professor Finder] [Bike Rental ML]        |
+| [Cloud Reaction Game]                       |
+------------------------------------------------
+| Footer: GitHub | LinkedIn | Email          |
+------------------------------------------------
+    </pre>
+
+    <h3>Projects Page Wireframe</h3>
+    <pre>
+------------------------------------------------
+| HC Portfolio        Home | Projects | Contact |
+------------------------------------------------
+| My Projects                                  |
+| Browse my projects by technical area.        |
+------------------------------------------------
+| Search: [____________________________]       |
+| Sort: [Newest v]                             |
+------------------------------------------------
+| Filters:                                     |
+| [All] [Web] [Software] [Data / ML]           |
+| [Backend] [Cloud / Linux] [Engineering]      |
+------------------------------------------------
+| [Project Card]       [Project Card]          |
+| Title                Title                   |
+| Category             Category                |
+| Tags                 Tags                    |
+| Short description    Short description       |
+| [View Details]       [View Details]          |
+------------------------------------------------
+| [Project Card]       [Project Card]          |
+------------------------------------------------
+| Footer: GitHub | LinkedIn | Email            |
+------------------------------------------------
+    </pre>
+
+  </main>
+</body>
+</html>

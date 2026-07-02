@@ -1,0 +1,5 @@
+<svg width="300" height="120" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="120" rx="18" fill="#1e293b"></rect>
+  <text x="50%" y="48%" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#38bdf8">HC</text>
+  <text x="50%" y="72%" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#f8fafc">Portfolio</text>
+</svg>
